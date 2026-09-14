@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Viaje de una Mujer por la Palabra</title>
+<style>
+  :root {
+    --dark: #4A3B3B;
+    --accent: #B48A78;
+    --light: #F5EDE8;
+    --bg: #FAFAF8;
+    --text: #2B2B2B;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header.hero {
+    background: var(--dark);
+    color: #fff;
+    padding: 70px 0 60px;
+    text-align: center;
+  }
+  header.hero .tag {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--accent);
+    font-family: Arial, sans-serif;
+    margin-bottom: 18px;
+  }
+  header.hero h1 { font-size: 38px; margin: 0 0 16px; line-height: 1.25; }
+  header.hero p.sub {
+    font-size: 18px; color: #D8D3C8; max-width: 560px; margin: 0 auto 22px;
+  }
+  header.hero p.translation {
+    font-size: 13px; color: #A8A296; font-family: Arial, sans-serif; margin-bottom: 26px;
+  }
+  .btn {
+    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    font-family: Arial, sans-serif; font-weight: bold; padding: 16px 36px;
+    border-radius: 4px; font-size: 16px; letter-spacing: 0.5px;
+  }
+  section { padding: 56px 0; }
+  section.alt { background: var(--light); }
+  h2 { font-size: 27px; text-align: center; color: var(--dark); margin-bottom: 10px; }
+  p.center-sub {
+    text-align: center; color: #666; font-family: Arial, sans-serif;
+    max-width: 560px; margin: 0 auto 36px;
+  }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  @media (max-width: 700px) { .grid3 { grid-template-columns: 1fr; } }
+  .card {
+    background: #fff; border: 1px solid #e2e2e2; border-radius: 6px;
+    padding: 24px; font-family: Arial, sans-serif;
+  }
+  .card h3 { color: var(--dark); font-size: 17px; margin-top: 0; }
+  .card p { color: #555; font-size: 14.5px; }
+  .plan-preview {
+    background: #fff; border: 1px solid #ddd; border-radius: 6px;
+    overflow: hidden; font-family: Arial, sans-serif; font-size: 13.5px;
+  }
+  .plan-preview table { width: 100%; border-collapse: collapse; }
+  .plan-preview th { background: var(--dark); color: #fff; text-align: left; padding: 10px 12px; }
+  .plan-preview td { padding: 8px 12px; border-top: 1px solid #eee; }
+  .plan-preview tr:nth-child(even) td { background: var(--light); }
+  .price-box {
+    max-width: 420px; margin: 0 auto; background: #fff; border: 2px solid var(--accent);
+    border-radius: 10px; padding: 34px 28px; text-align: center; font-family: Arial, sans-serif;
+  }
+  .price-box .price { font-size: 42px; color: var(--dark); font-weight: bold; margin: 10px 0; }
+  .price-box .was { color: #999; text-decoration: line-through; font-size: 16px; }
+  .price-box ul { text-align: left; color: #444; font-size: 14.5px; padding-left: 20px; }
+  footer { text-align: center; padding: 30px 20px; font-family: Arial, sans-serif; font-size: 12.5px; color: #999; }
+  .faq-item { max-width: 680px; margin: 0 auto 20px; font-family: Arial, sans-serif; }
+  .faq-item h4 { margin-bottom: 4px; color: var(--dark); }
+  .faq-item p { color: #555; font-size: 14.5px; margin-top: 0; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="tag">Plan de Lectura Bíblica de 365 Días</div>
+    <h1>El Viaje de una Mujer por la Palabra</h1>
+    <p class="sub">Una forma realista y sin culpa de leer toda la Biblia en un año &mdash; 10 a 15 minutos al día, con un diario guía que se adapta a la vida real.</p>
+    <p class="translation">Traducción recomendada: LBLA (La Biblia de las Américas)</p>
+    <a class="btn" href="#pricing">Consigue el Diario &mdash; $17</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Sin culpa. Sin atrasos. Solo una próxima página.</h2>
+    <p class="center-sub">Un ritmo que realmente puedas mantener, incluso en los días ocupados e imperfectos.</p>
+    <div class="grid3">
+      <div class="card"><h3>Sin adivinar</h3><p>Cada día está planificado &mdash; Antiguo Testamento, Nuevo Testamento, y Salmos o Proverbios. Solo abre en la fecha de hoy.</p></div>
+      <div class="card"><h3>Se adapta a tu vida</h3><p>Cada lectura diaria toma de 10 a 15 minutos, pensada para encajar entre el trabajo, los hijos y todo lo demás.</p></div>
+      <div class="card"><h3>52 páginas de reflexión</h3><p>Una página semanal con el método S.O.A.P. para detenerte y escribir lo que Dios te está mostrando.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Qué Incluye</h2>
+    <p class="center-sub">Un diario digital/imprimible de 66 páginas, de descarga instantánea.</p>
+    <div class="plan-preview">
+      <table>
+        <tr><th>Día</th><th>Antiguo Testamento</th><th>Nuevo Testamento</th><th>Salmos / Proverbios</th></tr>
+        <tr><td>1</td><td>Génesis 1-3</td><td>Mateo 1</td><td>Salmos 1</td></tr>
+        <tr><td>2</td><td>Génesis 4-5</td><td>Mateo 2</td><td></td></tr>
+        <tr><td>3</td><td>Génesis 6-7</td><td>Mateo 3</td><td>Salmos 2</td></tr>
+        <tr><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2>Consigue Tu Diario</h2>
+    <div class="price-box">
+      <div class="was">$27</div>
+      <div class="price">$17</div>
+      <ul>
+        <li>Plan de lectura de 365 días (AT + NT + Salmos/Proverbios)</li>
+        <li>52 páginas semanales de reflexión S.O.A.P.</li>
+        <li>Descarga digital instantánea (PDF, para imprimir o usar en tablet)</li>
+      </ul>
+      <a class="btn" href="#" style="margin-top:14px;">Obtener Acceso Instantáneo</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-item"><h4>¿Qué traducción de la Biblia necesito?</h4><p>Recomendamos la LBLA, pero cualquier traducción funciona &mdash; el plan solo indica libro y capítulo, así que puedes usar la Biblia o app que ya tengas.</p></div>
+    <div class="faq-item"><h4>¿Esto se puede imprimir?</h4><p>Sí. Es un PDF tamaño carta estándar que puedes imprimir en casa, guardar en tu planner, o usar digitalmente en una tablet.</p></div>
+    <div class="faq-item"><h4>¿Y si me atraso?</h4><p>No hay que ponerse al día &mdash; el plan está organizado por fecha del calendario, así que solo retomas en la fecha de hoy.</p></div>
+  </div>
+</section>
+
+<footer>&copy; 4-13 Bible Study Co. &middot; Esta es una descarga digital, entregada al instante tras la compra.</footer>
+
+</body>
+</html>

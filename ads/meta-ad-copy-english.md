@@ -11,7 +11,7 @@ Run them as separate ad sets/campaigns with separate creative — don't mix gend
 Ever started reading the Bible in January and quit by February? This 365-day plan fixes that. Every day is mapped out for you — Old Testament, New Testament, and a chapter of Psalms or Proverbs. 10–15 minutes a day. No guesswork, no getting lost. Just open to today's date and go. Includes 52 weekly reflection pages so you actually apply what you read, not just check a box.
 
 ### Primary text (variation 2 — direct offer)
-A Man's Journey Through the Word: a complete 365-day Bible reading plan + guided journal, built for men who want consistency over perfection. Instant digital download. Print it, put it in a binder, or use it on your tablet. $17 today.
+A Man's Journey Through the Word: a complete 365-day Bible reading plan + guided journal, built for men who want consistency over perfection. Instant digital download. Print it, put it in a binder, or use it on your tablet. $12 today.
 
 ### Primary text (variation 3 — short/punchy)
 Read through the whole Bible this year. One plan. 10 minutes a day. No app required. Get your journal now →
@@ -38,7 +38,7 @@ Read through the whole Bible this year. One plan. 10 minutes a day. No app requi
 You don't need a perfect morning routine to read the whole Bible this year — just a next page. This 365-day plan pairs a short Old Testament, New Testament, and Psalms/Proverbs reading every day (10–15 min), plus 52 weekly reflection pages to slow down and write what God is showing you. No guilt if you miss a day — just pick back up on today's date.
 
 ### Primary text (variation 2 — direct offer)
-A Woman's Journey Through the Word: a full 365-day Bible reading plan + guided journal made to fit real life. Instant digital download — print it or use it on your tablet. $17.
+A Woman's Journey Through the Word: a full 365-day Bible reading plan + guided journal made to fit real life. Instant digital download — print it or use it on your tablet. $12.
 
 ### Primary text (variation 3 — short/punchy)
 A realistic way to read the whole Bible this year — no guilt, no falling behind. Get your journal →

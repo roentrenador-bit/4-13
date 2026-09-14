@@ -11,7 +11,7 @@ Publícalos como campañas/conjuntos de anuncios separados, con creatividades se
 ¿Empezaste a leer la Biblia en enero y lo dejaste en febrero? Este plan de 365 días lo soluciona. Cada día está planificado para ti — Antiguo Testamento, Nuevo Testamento, y un capítulo de Salmos o Proverbios. 10 a 15 minutos al día. Sin adivinar, sin perderte. Solo abre en la fecha de hoy. Incluye 52 páginas semanales de reflexión para que apliques de verdad lo que lees.
 
 ### Texto principal (variación 2 — oferta directa)
-El Viaje de un Hombre por la Palabra: un plan completo de lectura bíblica de 365 días + diario guiado, hecho para hombres que buscan constancia, no perfección. Descarga digital instantánea. Imprímelo, ponlo en una carpeta, o úsalo en tu tablet. $17 hoy.
+El Viaje de un Hombre por la Palabra: un plan completo de lectura bíblica de 365 días + diario guiado, hecho para hombres que buscan constancia, no perfección. Descarga digital instantánea. Imprímelo, ponlo en una carpeta, o úsalo en tu tablet. $12 hoy.
 
 ### Texto principal (variación 3 — corto y directo)
 Lee toda la Biblia este año. Un plan. 10 minutos al día. Sin necesidad de apps. Consigue tu diario ahora →
@@ -38,7 +38,7 @@ Plan de 365 días + 52 páginas semanales de reflexión. Descarga instantánea.
 No necesitas una rutina matutina perfecta para leer toda la Biblia este año — solo una próxima página. Este plan de 365 días combina una lectura corta del Antiguo Testamento, Nuevo Testamento, y Salmos/Proverbios cada día (10–15 min), más 52 páginas semanales de reflexión para detenerte y escribir lo que Dios te está mostrando. Sin culpa si te pierdes un día — solo retoma en la fecha de hoy.
 
 ### Texto principal (variación 2 — oferta directa)
-El Viaje de una Mujer por la Palabra: un plan completo de lectura bíblica de 365 días + diario guiado, hecho para encajar en la vida real. Descarga digital instantánea — imprímelo o úsalo en tu tablet. $17.
+El Viaje de una Mujer por la Palabra: un plan completo de lectura bíblica de 365 días + diario guiado, hecho para encajar en la vida real. Descarga digital instantánea — imprímelo o úsalo en tu tablet. $12.
 
 ### Texto principal (variación 3 — corto y directo)
 Una forma realista de leer toda la Biblia este año — sin culpa, sin atrasos. Consigue tu diario →

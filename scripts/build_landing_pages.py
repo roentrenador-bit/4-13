@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import os
 
 OUT_DIR = r"C:\Users\julia\Desktop\4-13\landing-page"
@@ -168,7 +168,7 @@ VARIANTS = {
         h1="A Man's Journey Through the Word",
         hero_sub="A simple, no-excuses way to read through the entire Bible in one year &mdash; 10&ndash;15 minutes a day, with a guided journal built for consistency.",
         translation_note="Recommended translation: ESV (English Standard Version)",
-        cta_hero="Get the Journal &mdash; $17",
+        cta_hero="Get the Journal &mdash; $12",
         section1_h2="Stop starting over in Genesis 3.",
         section1_sub="You don't need more willpower. You need a plan you'll actually finish.",
         card1_h="No guesswork", card1_p="Every day is mapped out for you &mdash; Old Testament, New Testament, and Psalms or Proverbs. Just open to today's date.",
@@ -179,7 +179,7 @@ VARIANTS = {
         row1_ot="Genesis 1-3", row1_nt="Matthew 1", row1_wisdom="Psalms 1",
         row2_ot="Genesis 4-5", row2_nt="Matthew 2",
         row3_ot="Genesis 6-7", row3_nt="Matthew 3", row3_wisdom="Psalms 2",
-        pricing_h2="Get Your Journal", was_price="$27", price="$17",
+        pricing_h2="Get Your Journal", was_price="$19", price="$12",
         feature1="365-day reading plan (OT + NT + Psalms/Proverbs)",
         feature2="52 weekly S.O.A.P. reflection pages",
         feature3="Instant digital download (PDF, print or use on tablet)",
@@ -198,7 +198,7 @@ VARIANTS = {
         h1="A Woman's Journey Through the Word",
         hero_sub="A gentle, realistic way to read through the whole Bible in a year &mdash; 10&ndash;15 minutes a day, with a guided journal that fits real life.",
         translation_note="Recommended translation: ESV (English Standard Version)",
-        cta_hero="Get the Journal &mdash; $17",
+        cta_hero="Get the Journal &mdash; $12",
         section1_h2="No guilt. No falling behind. Just a next page.",
         section1_sub="A rhythm you can actually keep, even on the busy, imperfect days.",
         card1_h="No guesswork", card1_p="Every day is mapped out &mdash; Old Testament, New Testament, and Psalms or Proverbs. Just open to today's date.",
@@ -209,7 +209,7 @@ VARIANTS = {
         row1_ot="Genesis 1-3", row1_nt="Matthew 1", row1_wisdom="Psalms 1",
         row2_ot="Genesis 4-5", row2_nt="Matthew 2",
         row3_ot="Genesis 6-7", row3_nt="Matthew 3", row3_wisdom="Psalms 2",
-        pricing_h2="Get Your Journal", was_price="$27", price="$17",
+        pricing_h2="Get Your Journal", was_price="$19", price="$12",
         feature1="365-day reading plan (OT + NT + Psalms/Proverbs)",
         feature2="52 weekly S.O.A.P. reflection pages",
         feature3="Instant digital download (PDF, print or use on tablet)",
@@ -228,7 +228,7 @@ VARIANTS = {
         h1="El Viaje de un Hombre por la Palabra",
         hero_sub="Una forma simple y sin excusas de leer toda la Biblia en un a\u00f1o &mdash; 10 a 15 minutos al d\u00eda, con un diario gu\u00eda hecho para la constancia.",
         translation_note="Traducci\u00f3n recomendada: LBLA (La Biblia de las Am\u00e9ricas)",
-        cta_hero="Consigue el Diario &mdash; $17",
+        cta_hero="Consigue el Diario &mdash; $12",
         section1_h2="Deja de empezar de nuevo en G\u00e9nesis 3.",
         section1_sub="No necesitas m\u00e1s fuerza de voluntad. Necesitas un plan que realmente termines.",
         card1_h="Sin adivinar", card1_p="Cada d\u00eda est\u00e1 planificado para ti &mdash; Antiguo Testamento, Nuevo Testamento, y Salmos o Proverbios. Solo abre en la fecha de hoy.",
@@ -239,7 +239,7 @@ VARIANTS = {
         row1_ot="G\u00e9nesis 1-3", row1_nt="Mateo 1", row1_wisdom="Salmos 1",
         row2_ot="G\u00e9nesis 4-5", row2_nt="Mateo 2",
         row3_ot="G\u00e9nesis 6-7", row3_nt="Mateo 3", row3_wisdom="Salmos 2",
-        pricing_h2="Consigue Tu Diario", was_price="$27", price="$17",
+        pricing_h2="Consigue Tu Diario", was_price="$19", price="$12",
         feature1="Plan de lectura de 365 d\u00edas (AT + NT + Salmos/Proverbios)",
         feature2="52 p\u00e1ginas semanales de reflexi\u00f3n S.O.A.P.",
         feature3="Descarga digital instant\u00e1nea (PDF, para imprimir o usar en tablet)",
@@ -258,7 +258,7 @@ VARIANTS = {
         h1="El Viaje de una Mujer por la Palabra",
         hero_sub="Una forma realista y sin culpa de leer toda la Biblia en un a\u00f1o &mdash; 10 a 15 minutos al d\u00eda, con un diario gu\u00eda que se adapta a la vida real.",
         translation_note="Traducci\u00f3n recomendada: LBLA (La Biblia de las Am\u00e9ricas)",
-        cta_hero="Consigue el Diario &mdash; $17",
+        cta_hero="Consigue el Diario &mdash; $12",
         section1_h2="Sin culpa. Sin atrasos. Solo una pr\u00f3xima p\u00e1gina.",
         section1_sub="Un ritmo que realmente puedas mantener, incluso en los d\u00edas ocupados e imperfectos.",
         card1_h="Sin adivinar", card1_p="Cada d\u00eda est\u00e1 planificado &mdash; Antiguo Testamento, Nuevo Testamento, y Salmos o Proverbios. Solo abre en la fecha de hoy.",
@@ -269,7 +269,7 @@ VARIANTS = {
         row1_ot="G\u00e9nesis 1-3", row1_nt="Mateo 1", row1_wisdom="Salmos 1",
         row2_ot="G\u00e9nesis 4-5", row2_nt="Mateo 2",
         row3_ot="G\u00e9nesis 6-7", row3_nt="Mateo 3", row3_wisdom="Salmos 2",
-        pricing_h2="Consigue Tu Diario", was_price="$27", price="$17",
+        pricing_h2="Consigue Tu Diario", was_price="$19", price="$12",
         feature1="Plan de lectura de 365 d\u00edas (AT + NT + Salmos/Proverbios)",
         feature2="52 p\u00e1ginas semanales de reflexi\u00f3n S.O.A.P.",
         feature3="Descarga digital instant\u00e1nea (PDF, para imprimir o usar en tablet)",
@@ -290,3 +290,4 @@ if __name__ == "__main__":
         with open(path, "w", encoding="utf-8") as f:
             f.write(html)
         print(f"Wrote {path}")
+

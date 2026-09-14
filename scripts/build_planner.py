@@ -33,6 +33,34 @@ class MountainGlyph(Flowable):
         path.lineTo(cx + 95, 2)
         c.drawPath(path, stroke=1, fill=0)
 
+
+class FlowerGlyph(Flowable):
+    def __init__(self, width, height, color):
+        Flowable.__init__(self)
+        self.width = width
+        self.height = height
+        self.color = color
+        self.hAlign = "CENTER"
+
+    def wrap(self, availWidth, availHeight):
+        return (self.width, self.height)
+
+    def draw(self):
+        import math
+        c = self.canv
+        c.setStrokeColor(self.color)
+        c.setLineWidth(1.6)
+        cx, cy = self.width / 2, self.height / 2
+        r_petal = min(self.width, self.height) * 0.30
+        d_offset = r_petal * 0.85
+        for i in range(6):
+            angle = math.radians(i * 60)
+            px = cx + d_offset * math.cos(angle)
+            py = cy + d_offset * math.sin(angle)
+            c.ellipse(px - r_petal, py - r_petal, px + r_petal, py + r_petal, stroke=1, fill=0)
+        r_center = r_petal * 0.55
+        c.ellipse(cx - r_center, cy - r_center, cx + r_center, cy + r_center, stroke=1, fill=0)
+
 PRODUCT_DIR = r"C:\Users\julia\Desktop\4-13\product"
 
 GENDERS = {
@@ -42,9 +70,9 @@ GENDERS = {
         "light": colors.HexColor("#EDEAE3"),
     },
     "women": {
-        "accent": colors.HexColor("#B48A78"),
-        "dark": colors.HexColor("#4A3B3B"),
-        "light": colors.HexColor("#F5EDE8"),
+        "accent": colors.HexColor("#D68CA3"),
+        "dark": colors.HexColor("#4F2D3D"),
+        "light": colors.HexColor("#F7EDF1"),
     },
 }
 
@@ -230,7 +258,7 @@ def build_styles(colorset):
     return styles
 
 
-def cover_flowables(title, lang, colorset, styles):
+def cover_flowables(title, lang, colorset, styles, gender_key):
     title_light = ParagraphStyle(
         "TitleLight", parent=styles["CoverTitle"], textColor=colors.HexColor("#F2EFE9"),
     )
@@ -248,7 +276,10 @@ def cover_flowables(title, lang, colorset, styles):
     story.append(Paragraph(lang["subtitle"], styles["CoverSubtitle"]))
     story.append(HRFlowable(width="55%", thickness=1.2, color=colorset["accent"], spaceBefore=16, hAlign="CENTER"))
     story.append(Spacer(1, 0.55 * inch))
-    story.append(MountainGlyph(220, 78, colorset["accent"]))
+    if gender_key == "women":
+        story.append(FlowerGlyph(140, 100, colorset["accent"]))
+    else:
+        story.append(MountainGlyph(220, 78, colorset["accent"]))
     story.append(Spacer(1, 0.55 * inch))
     story.append(Paragraph(lang["tagline"], tagline_on_dark))
     story.append(Paragraph(lang["translation_note"], note_on_dark))
@@ -362,7 +393,7 @@ def build(lang_key, gender_key):
     )
 
     story = []
-    story += cover_flowables(title, lang, colorset, styles)
+    story += cover_flowables(title, lang, colorset, styles, gender_key)
     story += welcome_flowables(lang, welcome_text, styles)
     story += plan_table_flowables(lang, colorset, styles, rows)
     story += weekly_pages_flowables(lang, colorset, styles)

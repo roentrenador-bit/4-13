@@ -44,6 +44,19 @@ def rounded_card(size, radius, fill, outline=None, outline_w=0):
     return img, d
 
 
+def draw_flower(draw, cx, cy, r_petal, d_offset, color, width=3, petals=6):
+    import math
+    for i in range(petals):
+        angle = math.radians(i * (360 / petals))
+        px = cx + d_offset * math.cos(angle)
+        py = cy + d_offset * math.sin(angle)
+        draw.ellipse([px - r_petal, py - r_petal, px + r_petal, py + r_petal],
+                     outline=color, width=width)
+    r_center = r_petal * 0.55
+    draw.ellipse([cx - r_center, cy - r_center, cx + r_center, cy + r_center],
+                 outline=color, width=width)
+
+
 VARIANTS = {
     "english-men": dict(
         dark=(31, 42, 56), dark2=(17, 24, 33), gold=(140, 106, 63), gold_light=(196, 168, 122),
@@ -81,7 +94,8 @@ VARIANTS = {
         bottom_tagline="READ. REFLECT. GROW.",
     ),
     "english-women": dict(
-        dark=(74, 59, 59), dark2=(43, 33, 33), gold=(180, 138, 120), gold_light=(214, 186, 172),
+        dark=(79, 45, 61), dark2=(46, 24, 32), gold=(214, 140, 163), gold_light=(237, 199, 212),
+        motif="flower",
         tag="BIBLE READING PLAN + GUIDED JOURNAL",
         headline=["A Woman's Journey", "Through the Word"],
         subhead="365 DAYS OF READING. NO GUILT, JUST GRACE.",
@@ -151,7 +165,8 @@ VARIANTS = {
         bottom_tagline="LEE. REFLEXIONA. CRECE.",
     ),
     "spanish-women": dict(
-        dark=(74, 59, 59), dark2=(43, 33, 33), gold=(180, 138, 120), gold_light=(214, 186, 172),
+        dark=(79, 45, 61), dark2=(46, 24, 32), gold=(214, 140, 163), gold_light=(237, 199, 212),
+        motif="flower",
         tag="PLAN DE LECTURA B\u00cdBLICA + DIARIO GUIADO",
         headline=["El Viaje de una Mujer", "por la Palabra"],
         subhead="365 D\u00cdAS DE LECTURA. SIN CULPA, CON GRACIA.",
@@ -208,9 +223,17 @@ def build(name, cfg):
     d.rectangle([0, mid_top, W, mid_bottom], fill=DARK)
 
     mtn_color = tuple(min(255, c + 15) for c in DARK)
-    d.polygon([(0, mid_top + 210), (140, mid_top + 90), (260, mid_top + 210),
-               (420, mid_top + 40), (620, mid_top + 210), (780, mid_top + 110),
-               (W, mid_top + 210), (W, mid_bottom), (0, mid_bottom)], fill=mtn_color)
+    motif = cfg.get("motif", "mountain")
+    if motif == "flower":
+        for fx, fy, rp, do in [
+            (110, mid_top + 90, 26, 22), (960, mid_top + 130, 22, 19),
+            (70, 980, 20, 17), (1010, 960, 26, 22), (540, mid_top + 40, 18, 15),
+        ]:
+            draw_flower(d, fx, fy, rp, do, mtn_color, width=2)
+    else:
+        d.polygon([(0, mid_top + 210), (140, mid_top + 90), (260, mid_top + 210),
+                   (420, mid_top + 40), (620, mid_top + 210), (780, mid_top + 110),
+                   (W, mid_top + 210), (W, mid_bottom), (0, mid_bottom)], fill=mtn_color)
 
     # ---- Left card: Daily Reading ----
     lc_w, lc_h = 280, 470
@@ -273,8 +296,11 @@ def build(name, cfg):
     center_text(bd, bc_w / 2, 174, cfg["book_sub"][1], arial_11, GOLD_LIGHT)
 
     mx, my = bc_w / 2, 330
-    bd.polygon([(mx - 110, my + 60), (mx - 40, my - 30), (mx, my + 10),
-                (mx + 40, my - 60), (mx + 110, my + 60)], outline=GOLD, width=3)
+    if motif == "flower":
+        draw_flower(bd, mx, my, 34, 30, GOLD, width=3)
+    else:
+        bd.polygon([(mx - 110, my + 60), (mx - 40, my - 30), (mx, my + 10),
+                    (mx + 40, my - 60), (mx + 110, my + 60)], outline=GOLD, width=3)
 
     center_text(bd, bc_w / 2, bc_h - 70, cfg["translation"], arial_bd_14, GOLD)
     center_text(bd, bc_w / 2, bc_h - 46, spaced(cfg["book_bottom"]), arial_10, (180, 180, 180))

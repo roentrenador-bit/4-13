@@ -1,0 +1,14 @@
+A professional product photography mockup for a hardcover devotional journal titled "A MAN'S JOURNEY THROUGH THE WORD", subtitle "365-DAY BIBLE READING PLAN AND GUIDED JOURNAL", ESV translation. The book has a dark navy blue cover with warm gold foil title text and a thin gold border, and the words "READ / REFLECT / GROW" in small gold text near the bottom. The book stands upright on a dark rock surface outdoors, angled slightly toward camera.
+
+Background: a dramatic mountain range at dusk, rendered in deep navy-blue tones with warm gold light along the horizon and soft atmospheric haze — moody, masculine, editorial devotional aesthetic.
+
+Flanking the book on either side, two cream-colored journal pages lean outward at a slight angle: left page is titled "Daily Reading" with a "Day 1" entry; right page is titled "S.O.A.P. Journal" with four labeled sections.
+
+Style: high-end product photography, soft dramatic side lighting, shallow depth of field, warm gold and deep navy color palette only (no green), vertical 4:5 aspect ratio, clean composition with empty space near the top for a headline to be added later.
+
+---
+
+Tips for using this prompt:
+- AI image tools are unreliable at rendering small, precise, readable text (subtitle lines, journal page contents). Expect the book title and page labels to come out blurry or slightly wrong — that's normal.
+- Best approach: generate the photo/scene with this prompt, then add the exact headline and small text back in yourself using Canva (free) or Photoshop, the same way the reference image you showed me was likely finished.
+- If the tool lets you upload a reference image, upload the picture you showed me and add: "Recreate this exact composition and style, but change the color palette to deep navy blue and warm gold instead of green, and change the title to 'A MAN'S JOURNEY THROUGH THE WORD'." Reference-image-guided generation tends to match layout much more reliably than a text-only prompt.

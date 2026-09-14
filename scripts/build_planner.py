@@ -4,9 +4,34 @@ from reportlab.lib.units import inch
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, HRFlowable
+    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, HRFlowable, Flowable
 )
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
+
+
+class MountainGlyph(Flowable):
+    def __init__(self, width, height, color):
+        Flowable.__init__(self)
+        self.width = width
+        self.height = height
+        self.color = color
+        self.hAlign = "CENTER"
+
+    def wrap(self, availWidth, availHeight):
+        return (self.width, self.height)
+
+    def draw(self):
+        c = self.canv
+        c.setStrokeColor(self.color)
+        c.setLineWidth(1.6)
+        cx, h = self.width / 2, self.height
+        path = c.beginPath()
+        path.moveTo(cx - 95, 2)
+        path.lineTo(cx - 35, h * 0.72)
+        path.lineTo(cx, h * 0.32)
+        path.lineTo(cx + 35, h)
+        path.lineTo(cx + 95, 2)
+        c.drawPath(path, stroke=1, fill=0)
 
 PRODUCT_DIR = r"C:\Users\julia\Desktop\4-13\product"
 
@@ -206,15 +231,27 @@ def build_styles(colorset):
 
 
 def cover_flowables(title, lang, colorset, styles):
+    title_light = ParagraphStyle(
+        "TitleLight", parent=styles["CoverTitle"], textColor=colors.HexColor("#F2EFE9"),
+    )
+    tagline_on_dark = ParagraphStyle(
+        "TaglineOnDark", parent=styles["TinyCenter"], textColor=colors.HexColor("#B9B6AE"),
+    )
+    note_on_dark = ParagraphStyle(
+        "NoteOnDark", parent=styles["CoverNote"], textColor=colors.HexColor("#9E9B94"),
+    )
+
     story = []
-    story.append(Spacer(1, 1.5 * inch))
-    story.append(HRFlowable(width="60%", thickness=1.4, color=colorset["accent"], spaceAfter=18, hAlign="CENTER"))
-    story.append(Paragraph(title, styles["CoverTitle"]))
+    story.append(Spacer(1, 0.85 * inch))
+    story.append(HRFlowable(width="55%", thickness=1.2, color=colorset["accent"], spaceAfter=16, hAlign="CENTER"))
+    story.append(Paragraph(title, title_light))
     story.append(Paragraph(lang["subtitle"], styles["CoverSubtitle"]))
-    story.append(HRFlowable(width="60%", thickness=1.4, color=colorset["accent"], spaceBefore=18, hAlign="CENTER"))
-    story.append(Spacer(1, 0.5 * inch))
-    story.append(Paragraph(lang["tagline"], styles["TinyCenter"]))
-    story.append(Paragraph(lang["translation_note"], styles["CoverNote"]))
+    story.append(HRFlowable(width="55%", thickness=1.2, color=colorset["accent"], spaceBefore=16, hAlign="CENTER"))
+    story.append(Spacer(1, 0.55 * inch))
+    story.append(MountainGlyph(220, 78, colorset["accent"]))
+    story.append(Spacer(1, 0.55 * inch))
+    story.append(Paragraph(lang["tagline"], tagline_on_dark))
+    story.append(Paragraph(lang["translation_note"], note_on_dark))
     story.append(PageBreak())
     return story
 
@@ -293,6 +330,18 @@ def footer(text):
     return _footer
 
 
+def cover_page(colorset, footer_text):
+    footer_fn = footer(footer_text)
+
+    def _cover(canvas, doc):
+        canvas.saveState()
+        canvas.setFillColor(colorset["dark"])
+        canvas.rect(0, 0, letter[0], letter[1], fill=1, stroke=0)
+        canvas.restoreState()
+        footer_fn(canvas, doc)
+    return _cover
+
+
 def build(lang_key, gender_key):
     lang = LANG[lang_key]
     colorset = GENDERS[gender_key]
@@ -318,7 +367,7 @@ def build(lang_key, gender_key):
     story += plan_table_flowables(lang, colorset, styles, rows)
     story += weekly_pages_flowables(lang, colorset, styles)
 
-    doc.build(story, onFirstPage=footer(footer_text), onLaterPages=footer(footer_text))
+    doc.build(story, onFirstPage=cover_page(colorset, footer_text), onLaterPages=footer(footer_text))
     print(f"Built {out_path}")
 
 

@@ -139,7 +139,7 @@ TEMPLATE = """<!DOCTYPE html>
         <li>{feature2}</li>
         <li>{feature3}</li>
       </ul>
-      <a class="btn" href="#" style="margin-top:14px;">{cta_price}</a>
+      <a class="btn" href="{payment_link}" style="margin-top:14px;">{cta_price}</a>
     </div>
   </div>
 </section>
@@ -189,6 +189,7 @@ VARIANTS = {
         faq2_q="Is this printable?", faq2_a="Yes. It's a standard letter-size PDF you can print at home or at a print shop, or use digitally on a tablet.",
         faq3_q="What if I fall behind?", faq3_a="The plan is built by calendar day, not sequential pressure &mdash; just pick back up on today's date, no catch-up required.",
         footer="&copy; 4-13 Bible Study Co. &middot; This is a digital download, delivered instantly after purchase.",
+        payment_link="https://buy.stripe.com/5kQdRa8yNg9zcuyehZ77O00",
     ),
     "english-women": dict(
         html_lang="en",
@@ -219,6 +220,7 @@ VARIANTS = {
         faq2_q="Is this printable?", faq2_a="Yes. It's a standard letter-size PDF you can print at home, in a planner, or use digitally on a tablet.",
         faq3_q="What if I fall behind?", faq3_a="There's no catching up required &mdash; the plan is built by calendar day, so you just pick back up on today's date.",
         footer="&copy; 4-13 Bible Study Co. &middot; This is a digital download, delivered instantly after purchase.",
+        payment_link="https://buy.stripe.com/cNi00k16l4qRbqu4Hp77O01",
     ),
     "spanish-men": dict(
         html_lang="es",
@@ -249,6 +251,7 @@ VARIANTS = {
         faq2_q="\u00bfEsto se puede imprimir?", faq2_a="S\u00ed. Es un PDF tama\u00f1o carta est\u00e1ndar que puedes imprimir en casa o en una imprenta, o usar digitalmente en una tablet.",
         faq3_q="\u00bfY si me atraso?", faq3_a="El plan est\u00e1 organizado por fecha del calendario, no por presi\u00f3n secuencial &mdash; solo retoma en la fecha de hoy, sin necesidad de ponerte al d\u00eda.",
         footer="&copy; 4-13 Bible Study Co. &middot; Esta es una descarga digital, entregada al instante tras la compra.",
+        payment_link="https://buy.stripe.com/cNieVe9CR7D3dyC1vd77O02",
     ),
     "spanish-women": dict(
         html_lang="es",
@@ -279,6 +282,7 @@ VARIANTS = {
         faq2_q="\u00bfEsto se puede imprimir?", faq2_a="S\u00ed. Es un PDF tama\u00f1o carta est\u00e1ndar que puedes imprimir en casa, guardar en tu planner, o usar digitalmente en una tablet.",
         faq3_q="\u00bfY si me atraso?", faq3_a="No hay que ponerse al d\u00eda &mdash; el plan est\u00e1 organizado por fecha del calendario, as\u00ed que solo retomas en la fecha de hoy.",
         footer="&copy; 4-13 Bible Study Co. &middot; Esta es una descarga digital, entregada al instante tras la compra.",
+        payment_link="https://buy.stripe.com/3cI5kEdT77D3eCG3Dl77O03",
     ),
 }
 
